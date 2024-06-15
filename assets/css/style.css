@@ -1,0 +1,198 @@
+/*Google fonts import*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poiret+One&display=swap');
+
+
+/* Astrisk wildcard selector to override default styles added by the browser*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: none;
+}
+
+/* general styles*/
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*generic project styles*/
+    color: #3a3a3a;
+    font-family: 'Nunito Sans', sans-serif;
+    
+    
+
+}
+
+h1 {
+    font-family: 'Poiret One', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+
+/* header */
+header {
+    background-color: black;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-decoration: none;
+}
+
+#menu {
+    font-size: 100%;
+    letter-spacing: 2px;
+    list-style-type: none;
+    font-style: none;
+    color: white;
+}
+
+#menu>li {
+    margin-bottom: 1em;
+    color: white;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/*Navbar style with drop down toggle*/
+nav {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+/*nav-toggle*/
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+    padding-bottom: 2%;
+
+
+
+}
+
+
+/* Logo Styles */
+.logo-container {
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*Header*/
+header {
+    background-color: black;
+}
+
+/*Main*/
+main {
+    /*make main element take any surpriced space to push footer down*/
+    flex: 1 0 auto;
+    margin-top: 70px;
+
+}
+
+/* Hero Image section */
+#hero {
+    height: 600px;
+    width: 100%;
+    background-color: light-green;
+}
+
+
+/*Footer*/
+#social-icons {
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+}
+
+#social-icons i {
+    font-size: 160%;
+    padding: 5%;
+
+}
+
+
+/*Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+
+
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+
+    .logo-container {
+        size: 400%;
+        margin: 0 0.5rem;
+    }
+
+    /* Main content */
+    main {
+        /* Push main content down to accommodate lager header */
+        margin-top: 79px;
+    }
+
+}
+
+/* Large devices: (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+}
