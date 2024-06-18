@@ -153,6 +153,34 @@ main {
     background: url("../images/2400-a-pirate-ship-in-the-ocean-with-flames-ai-generative.jpeg") no-repeat center center/cover;
 }
 
+/* About us page */
+
+.about-container {
+    max-height: auto;
+    width: 100%;
+}
+
+#about-us-page {
+    background: url("../images/1000_F_761095263_JV38VFtqUXarHSd74IZCvezB2DKkks8e.jpg") no-repeat center center/cover;
+    height: 100vh auto;
+    width: 100%;
+}
+
+#about-us-page-text p {
+    font-family: 'Poiret One', sans-serif;
+    color: white;
+    background-color: rgba(231, 231, 231, 0.226);
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 15px;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    margin: auto;
+}
+
 /* About us section*/
 #about-us-bg {
     background: url("../images/1000_F_761095263_JV38VFtqUXarHSd74IZCvezB2DKkks8e.jpg") no-repeat center center/cover;
@@ -187,6 +215,7 @@ main {
     min-height: 500px;
     width: 100%;
 }
+
 .sign-up-container {
     display: grid;
     grid-template-rows: repeat(1, 280px);
@@ -195,29 +224,24 @@ main {
 
 .signup-text {
     font-family: 'Poiret One', sans-serif;
-    font-size: 30px;
+    font-size: 170%;
     color: white;
     background-color: rgba(95, 95, 95, 0.233);
-    padding-top: 30px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 10px;
-    text-align: center;
-    margin: auto;
-
+    padding: 30px;
+    padding-top: 45px;
+    padding-bottom: 20px;
 }
 
 
 .item p {
     font-family: 'Poiret One', sans-serif;
     color: white;
+    font-size: 130%;
     background-color: rgba(95, 95, 95, 0.233);
     bottom: 10px;
     width: 100%;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-bottom: 50%;
-    padding-right: 20px;
+    padding: 30px;
+    padding-bottom: 15%;
     margin: auto;
 
 }
@@ -243,29 +267,31 @@ main {
 
 .text-input {
     background: transparent;
-    color: #fafafa; 
+    color: #fafafa;
     width: 100%;
     height: 25px;
     margin: 5px 0 20px 0;
     border: 1px solid #fafafa;
-    border-radius: 2px;   
+    border-radius: 2px;
     padding: 0 5px;
 }
 
 .join-button {
-    height: 20px;
+    font-family: 'Poiret One', sans-serif;
+    height: 25px;
     width: 100%;
     margin: 10px 0 20px 0;
     border: 1px solid #fafafa;
     border-radius: 2px;
     padding: 0 5px;
-    font-size: 80%;
+    font-size: 90%;
     background: transparent;
     color: #fafafa;
-    
+
 }
 
 /*Footer*/
+
 #social-icons {
     background-color: black;
     text-align: center;
@@ -333,6 +359,29 @@ main {
         padding-bottom: 40px;
     }
 
+    /* Sign up form*/
+
+    #sign-up {
+        min-height: 240px;
+    }
+
+    #signup-form {
+        padding-bottom: 30%;
+    }
+
+    #signup-form>h2 {
+        display: none;
+    }
+
+    .signup-text {
+        font-size: 200%;
+    }
+
+    .item p {
+        padding-bottom: 30%;
+        font-size: 150%;
+    }
+
 }
 
 /* Large devices: (laptops and desktops, 992px and up) */
@@ -341,11 +390,10 @@ main {
         border-bottom: 1px solid white;
     }
 
-    #menu {
-        font-size: 110%;
-        
+    #menu>li {
+        padding-left: 2rem;
     }
-        
+
 
     /* Hero*/
     #hero-text {
@@ -365,5 +413,19 @@ main {
         padding-bottom: 50px;
     }
 
+    /* Sign up form*/
+
+    #sign-up {
+        min-height: 240px;
+    }
+
+    #signup-form {
+        padding-bottom: 10%;
+    }
+
+    .item p {
+        padding-bottom: 15%;
+        font-size: 150%;
+    }
 
 }
