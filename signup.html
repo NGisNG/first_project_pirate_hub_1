@@ -34,73 +34,35 @@
     <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></label>
     <nav>
       <ul id="menu">
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About us</a></li>
-        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="signup.html" class="active">Sign Up</a></li>
       </ul>
     </nav>
   </header>
 
   <!--main content-->
   <main>
-    <section id="hero">
-      <div id="hero-text">
-        <h1>Pirate Hub</h1>
-        <h3>Dive into the world of pirates and learn about their history.</h3>
-      </div>
-    </section>
 
-    <section id="about-us">
-      <div id="about-us-bg">
+    <section id="sign-up-page">
 
-        <div id="about-us.cover">
-          <h2>Embark on a Pirate Adventure</h2>
+      <form method="post" action="https://formdump.codeinstitute.net" id="signup-form-page">
+        <h2>Let's sign you up!</h2>
 
-          <div id="about-us-text">
-            <a href="about.html">
-              <p>Ahoy, mateys! Welcome aboard, the ultimate online sanctuary for pirate enthusiasts. Dive into thrilling
-                legends, discover hidden treasures, and embark on epic adventures. Celebrate the exploits of pirates like
-                Blackbeard and Anne Bonny, and unravel the mysteries of pirate lore. At Pirate Hub, the spirit of
-                adventure
-                lives on. Welcome aboard, and let the treasure hunt begin!
-                <strong>Read more ...</strong>
-              </p>
-            </a>
+        <p>Ledgends have it if you sign up to our news letter we may send you a treasure map or a chest full of coins!
+        </p>
 
-          </div>
-        </div>
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" class="text-input" name="first-name" required>
+        <br>
 
-      </div>
-    </section>
+        <label for="email-address">Email Address</label>
+        <input type="email" id="email-address" class="text-input" name="email-address" required>
+        <br>
 
-    <section id="sign-up">
-      <div class="sign-up-container">
+        <button type="submit" class="join-button"><strong>come aboard</strong></button>
+      </form>
 
-        <div class="item item-1">
-          <h2 class="signup-text">Krakens signed up!</h2>
-          <p>Ledgends have it if you sign up to our news letter we may send you a treasure map or a chest full of coins!
-          </p>
-
-        </div>
-
-        <div class="item item-2">
-          <form method="post" action="https://formdump.codeinstitute.net" id="signup-form">
-            <h2>Let's get you signed up!</h2>
-
-            <label for="first-name">First Name</label>
-            <input type="text" id="first-name" class="text-input" name="first-name" required>
-            <br>
-
-            <label for="email-address">Email Address</label>
-            <input type="email" id="email-address" class="text-input" name="email-address" required>
-            <br>
-
-            <button type="submit" class="join-button"><strong>come aboard</strong></button>
-          </form>
-
-        </div>
-
-      </div>
     </section>
 
   </main>
