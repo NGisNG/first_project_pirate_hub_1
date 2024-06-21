@@ -44,6 +44,7 @@ h3 {
     padding-top: 30px;
     padding-left: 10px;
     padding-bottom: 10px;
+    margin-bottom: 35%;
 }
 
 /* header */
@@ -56,7 +57,7 @@ header {
     box-shadow: 0 2px 2px #000000;
     display: flex;
     justify-content: space-between;
-    align-items:flex-end;
+    align-items: flex-end;
     text-decoration: none;
 }
 
@@ -106,9 +107,6 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
     padding-bottom: 2%;
-
-
-
 }
 
 
@@ -151,14 +149,15 @@ main {
     height: 600px;
     width: 100%;
     background: url("../images/pirate-ship-in-the-ocean.webp") no-repeat center center/cover;
+    position: relative;
 }
 
 /* About us page */
-
 .about-container {
     background: url("../images/old-world-map.webp") no-repeat center center/cover;
-    height: 90%;
+    height: auto;
     width: 100%;
+
 }
 
 #about-us-page h2 {
@@ -168,7 +167,7 @@ main {
     padding: 20px;
 }
 
- hr {
+hr {
     margin: 0 20px;
 }
 
@@ -188,10 +187,14 @@ main {
 }
 
 /* About us section*/
-#about-us-bg {
+#about-us {
     background: url("../images/old-world-map.webp") no-repeat center center/cover;
     height: 60vh;
     width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -208,9 +211,8 @@ main {
     background-color: rgba(231, 231, 231, 0.226);
     bottom: 10px;
     width: 100%;
-    padding-top: 20px;
     padding-left: 20px;
-    padding-bottom: 35px;
+    padding-bottom: 10px;
     padding-right: 20px;
     margin: auto;
 }
@@ -236,6 +238,8 @@ main {
     padding: 30px;
     padding-top: 45px;
     padding-bottom: 20px;
+    position: relative;
+    display: flex;
 }
 
 
@@ -298,8 +302,6 @@ main {
 }
 
 /* Sign up page*/
-
-
 #sign-up-page {
     display: grid;
     grid-template-rows: repeat(4, 280px);
@@ -319,13 +321,13 @@ main {
     margin: 0 20px;
 }
 
-#signup-form-page > h2 {
+#signup-form-page>h2 {
     color: #fafafa;
     margin-bottom: 20px;
     font-size: 30px;
 }
 
-#signup-form-page > p {
+#signup-form-page>p {
     color: #fafafa;
     margin-bottom: 20px;
     font-size: 18px;
@@ -333,7 +335,6 @@ main {
 
 
 /*Footer*/
-
 #social-icons {
     background-color: black;
     text-align: center;
@@ -390,23 +391,35 @@ main {
         margin-top: 79px;
     }
 
-    /* About us */
-
-    #about-us-bg {
-        height: 44vh;
+    /* Hero text */
+    #hero-text {
+        margin-bottom: 15%;
     }
 
+    /* About us section*/
     #about-us-bg h2 {
-        font-size: 180%;
+        font-size: 200%;
     }
 
     #about-us p {
-        font-size: 130%;
+        font-size: 170%;
         padding-bottom: 40px;
     }
 
-    /* Sign up form*/
+    /* About us page */
+    #about-us-page {
+        height: auto;
+    }
 
+    #about-us-page h2 {
+        font-size: 200%;
+    }
+
+    #about-us-page  p{
+        font-size: 120%;
+    }
+
+    /* Sign up form*/
     #sign-up {
         min-height: 240px;
     }
@@ -424,17 +437,27 @@ main {
     }
 
     .item p {
-        padding-bottom: 30%;
+        padding-top: 0px;
+        padding-bottom: 50px;
         font-size: 150%;
     }
 
     /* Sign up page*/
+    #sign-up-page {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100svh;
+    }
+
     #signup-form-page {
         padding-right: 100px;
         padding-left: 100px;
+
     }
 
-    #signup-form-page > p {
+    #signup-form-page>p {
         color: #fafafa;
         margin-bottom: 20px;
         font-size: 23px;
@@ -444,37 +467,62 @@ main {
 
 /* Large devices: (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+
+    /* Menu */
     #menu a:hover {
         border-bottom: 1px solid white;
     }
 
     #menu>li {
         padding-left: 2rem;
+        font-size: 150%;
     }
 
-    
-
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
 
     /* Hero*/
+    #hero {
+        height: 90vh;
+    }
+
     #hero-text {
-        font-size: 180%;
-        position: absolute;
+        font-size: 200%;
         bottom: 15px;
         width: 80%;
         min-height: 160px;
         padding-top: 30px;
         padding-left: 15px;
         padding-bottom: 10px;
+        margin-bottom: 5%;
     }
 
-    /* About us */
+    /* About us section */
+    #about-us {
+        height: 40vh;
+    }
 
-    #about-us-bg {
-        height: 34vh;
+    #about-us-bg h2 {
+        font-size: 250%;
+        padding-top: 80px;
+    }
+
+    #about-us p {
+        font-size: 200%;
+        padding-bottom: 60px;
+    }
+
+    /* About us page */
+    #about-us-page {
+        height: auto;
+        font-size: 140%;
     }
 
     #about-us-page h2 {
         font-size: 200%;
+        padding-top: 70px;
     }
 
     #about-us-page p {
@@ -482,18 +530,18 @@ main {
     }
 
     /* Sign up form*/
-
     #sign-up {
-        min-height: 240px;
+        min-height: 29vh;
     }
 
     #signup-form {
-        padding-bottom: 10%;
+        padding-top: 75px;
+        padding-bottom: 75px;
     }
 
     .item p {
-        padding-bottom: 15%;
-        font-size: 150%;
+        padding-bottom: 80px;
+        font-size: 200%;
     }
 
     /* Sign up page*/
@@ -502,12 +550,25 @@ main {
         padding-left: 200px;
         margin-right: 50px;
         margin-left: 50px;
+        padding-bottom: 50px;
+        font-size: 150%;
+        letter-spacing: 2px;
     }
 
     #signup-form-page > p {
         color: #fafafa;
         margin-bottom: 20px;
-        font-size: 35px;
+        font-size: 40px;
+    }
+
+    #signup-form-page h2 {
+        font-size: 45px;
+    }
+
+    #first-name-p,
+    #email-address-p,
+    #join-button-p {
+        height: 35px;
     }
 
 }
